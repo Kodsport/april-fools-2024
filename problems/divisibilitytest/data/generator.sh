@@ -13,7 +13,7 @@ sample 1
 sample 2
 sample 3
 
-group smallN 1
+group group1 1
 limits maxN=100000
 tc 1
 tc 2
@@ -39,7 +39,7 @@ tc g1-013 gen n=8303 #ans=19
 tc g1-014 gen n=169 #ans=13
 tc g1-015 gen n=4913 #ans=13
 
-group div2 10
+group group2 10
 tc 2
 tc b2
 tc g1-002
@@ -50,22 +50,22 @@ tc_manual ../manual/twos/p2-002.in
 tc_manual ../manual/twos/p2-003.in
 
 
-group div3 10
+group group3 10
 tc 1
 tc b3
 tc g1-003
 tc_manual ../manual/threees/p3-001.in
 tc_manual ../manual/threees/p3-002.in
 
-group div5 10
+group group4 10
 tc 3
 tc g1-008
-tc g1-005
+tc g1-006
 tc_manual ../manual/fives/p5-001.in
 tc_manual ../manual/fives/p5-002.in
 
 
-group div7 10
+group group5 10
 tc b7
 tc g1-001
 tc g1-004
@@ -77,24 +77,24 @@ tc_manual ../manual/expo7.in
 tc_manual ../manual/expo7_2.in
 tc_manual ../manual/sevens/p7-001.in
 
-group div11 10
+group group6 10
 tc b11
 tc g1-005
 tc g1-007
 tc_manual ../manual/elevens/p11-001.in
 tc_manual ../manual/elevens/p11-002.in
 
-group full 49
+group group7 49
 tc expo7_2
 tc_manual ../manual/expo13.in
 tc largerer7
-include_group smallN
+include_group group1
 tc expo7
-include_group div2
-include_group div3
-include_group div5
-include_group div7
-include_group div11
+include_group group2
+include_group group3
+include_group group4
+include_group group5
+include_group group6
 tc_manual ../manual/expo17.in
 tc_manual ../manual/expo19.in
 tc_manual ../manual/expo13_1.in

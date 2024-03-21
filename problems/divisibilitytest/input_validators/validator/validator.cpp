@@ -10,14 +10,21 @@ using namespace std;
 
 void run() {
 	string n = Line();
-	Endl();
+	
 
 	assert (n[0] != '0');
 	
-	int ans = int(Arg("ans",0));
+	int maxN = int(Arg("maxN",100000));
 
+	assert(maxN >= n.size());
 
-	
+	if (maxN == n.size()){
+		assert(n[0] == '1');
+		for (char &x: n.substr(1,n.size())){
+			assert(x == '0');
+		}
+	}
+
 
 	Eof();
 }

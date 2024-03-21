@@ -15,11 +15,18 @@ def cmdlinearg(name, default=None):
 
 random.seed(int(cmdlinearg('seed', sys.argv[-1])))
 
+n = int(cmdlinearg('n',0))
+
 ans = int(cmdlinearg('ans',0))
 l = int(cmdlinearg("l",10**5-1))
 
 ans = 0 # TODO REMOVE
-if ans:
+
+if n:
+    print(n)
+    
+elif ans == 7:
+
     pass # TODO
 
 else:

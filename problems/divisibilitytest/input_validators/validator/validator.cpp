@@ -13,7 +13,7 @@ void run() {
 	Endl();
 
 	assert (n[0] != '0');
-
+	
 	int ans = int(Arg("ans",0));
 
 

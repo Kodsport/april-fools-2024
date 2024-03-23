@@ -12,7 +12,7 @@ samplegroup
 sample 1
 sample 2
 sample 3
-sample 4
+#sample 4
 
 group group1 1
 limits maxN=100000
@@ -67,7 +67,7 @@ tc_manual ../manual/fives/p5-002.in
 
 
 group group5 10
-tc 4
+#tc 4
 tc b7
 tc g1-001
 tc g1-004

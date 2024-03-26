@@ -13,9 +13,10 @@ typedef vector<int> vi;
 
 
 void run() {
-  while (_peek1()){
-    Line();
-  }
+
+  Line();
+  
   Eof();
+
 }
 

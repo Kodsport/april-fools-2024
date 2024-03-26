@@ -15,14 +15,18 @@ auto Start = chrono::high_resolution_clock::now();
 void resettimer() { Start = chrono::high_resolution_clock::now(); }
 int elapsedmillis() { return chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - Start).count(); }
 
-const int MAX_APP = 500;
-const int MAX_WALK = 5000;
-int N;
 
 
 int main(int argc, char **argv) {
     init_io(argc, argv);
+    string inp;
+    while (!(author_out >> inp)){
+        if (elapsedmillis() >= 800){
+            accept();
+            //break;
+        }
+    }
+    wrong_answer("Kattis did not get happy.");
 
-    
-
+    return 0;
 }

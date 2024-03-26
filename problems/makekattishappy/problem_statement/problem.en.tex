@@ -1,44 +1,49 @@
 \problemname{Make Kattis Happy}
 
 Kattis is not happy. Can you make Kattis happy?
-Kattis är inte glad. Kan du få Kattis att bli glad?
 
 \begin{centering}
   \begin{figure}[h]
       \centering
       \includegraphics[width=0.8\textwidth]{tired-kattis.png}
-      \caption{Picture of Kattis. Kattis is tired and  över att du lämnar in så många WA. }
+      \caption{Picture of Kattis. Kattis is tired and sad since you always submit so many WA. }
   \end{figure}
 \end{centering}
 
 
 \section*{Interaction}
-First, you get information about the room you are currently in. 
-This will be given as a binary string of length five, where every character is ``\texttt{1}'' if you can go in a certain direction, and ``\texttt{0}'' otherwise.
-In order, the characters tell you if you can go up, right, down to the right, down to the left, and left.
-So the string \texttt{01001} means that you can go to the right and to the left, but in no other directions.
+You have 10 different actions you can do:
 
-Then, you choose either to go to an adjacent room, or to use Campus Maps.
-To go to an adjacent room you write any of the strings 
-``\texttt{up}'', ``\texttt{right}'', ``\texttt{downright}'', ``\texttt{downleft}'' or ``\texttt{left}''.
-Then you get information about the new room you are in, according to the same format as above.
+\begin{enumerate}
+  \item Pour 10 ml of milk infront of Kattis.
+  \item Pet Kattis (Softly)
+  \item Pet Kattis (Hard).
+  \item Say ``Meow'' to Kattis.
+  \item Make Kattis wear some sick \href{https://www.amazon.se/kostymer-roliga-husdjur-kattunge-outfits/dp/B08XX7W5F9}{cat clothes}.
+  \item Give Kattis a high-five.
+  \item Watch cat-videos on Youtube together Kattis. (For example this \href{https://www.youtube.com/watch?v=NAh9oLs67Cw}{video} which Joshua has linked on his Discord)
+  \item Use a laserpointer and get Kattis to chase it.
+  \item Feed Kattis some cat candy.
+  \item Give Kattis some catnip.
+\end{enumerate}
 
-To use the app you write ``\texttt{app}''.
-The app will then calculate the length of the shortest path from where you are to the goal that uses as few staircases as possible.
-Since the app is very sensitive to Integer Overflows, it will crash if this length exceeds $10^9$.
-In that case, the app will write $-1$.
-Otherwise, the length of the path to the goal is written.
+You can do up to 20 actions after eachother. You are allowed to repeat the same actions.
+To preform an action, output the action's number on a single line. For example, to pet Kattis softly, 
+and then pour 10 ml of milk infront of Kattis, you'll have to output \texttt{2} on a line, and then \texttt{1} on a seperate line.
+Make sure not to write too many actions on a single line. You do not want to make Kattis even more sad.
 
-When you reach your destination, you should print out ``\texttt{here}'', and your program should be terminated.
+Your actions will be preformed one after another. If you manage to make Kattis upset to some specific degree,
+then your program will get terminated and you get \texttt{Wrong Answer} immediately.
+You will also get \texttt{Wrong Answer} if you write something that is not one of the 10 mentioned alternatives.
+
+When you manage to make Kattis happy, your remaining actions will get ignored.
 
 
-\textbf{Make sure to flush the output after each query}, otherwise you can get \textit{Time Limit Exceeded}.
+\textbf{Make sure to flush the output after each action}, otherwise you can get \textit{Time Limit Exceeded}.
 In C++ this can be done using \texttt{cout << flush;}
 or \texttt{fflush(stdout);}
 in Python with \texttt{stdout.flush()},
 and in Java with \texttt{System.out.flush();}.
-
-
 
 
 \noindent

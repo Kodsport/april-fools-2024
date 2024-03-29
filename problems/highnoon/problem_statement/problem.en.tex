@@ -1,0 +1,55 @@
+\problemname{Make Kattis Happy}
+
+Kattis is not happy. Can you make Kattis happy?
+
+\begin{centering}
+  \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.8\textwidth]{tired-kattis.png}
+      \caption{Picture of Kattis. Kattis is tired and sad since you always submit so many WA. }
+  \end{figure}
+\end{centering}
+
+
+\section*{Interaction}
+You have 10 different actions you can do:
+
+\begin{enumerate}
+  \item Pour 10 ml of milk infront of Kattis.
+  \item Pet Kattis (Softly)
+  \item Pet Kattis (Hard).
+  \item Say ``Meow'' to Kattis.
+  \item Make Kattis wear some sick \href{https://www.amazon.se/kostymer-roliga-husdjur-kattunge-outfits/dp/B08XX7W5F9}{cat clothes}.
+  \item Give Kattis a high-five.
+  \item Watch cat-videos on Youtube together Kattis. (For example this \href{https://www.youtube.com/watch?v=NAh9oLs67Cw}{video} which Joshua has linked on his Discord)
+  \item Use a laserpointer and get Kattis to chase it.
+  \item Feed Kattis some cat candy.
+  \item Give Kattis some catnip.
+\end{enumerate}
+
+You can do up to 20 actions after eachother. You are allowed to repeat the same actions.
+To preform an action, output the action's number on a single line. For example, to pet Kattis softly, 
+and then pour 10 ml of milk infront of Kattis, you'll have to output \texttt{2} on a line, and then \texttt{1} on a seperate line.
+Make sure not to write too many actions on a single line. You do not want to make Kattis even more sad.
+
+Your actions will be preformed one after another. If you manage to make Kattis upset to some specific degree,
+then your program will get terminated and you get \texttt{Wrong Answer} immediately.
+You will also get \texttt{Wrong Answer} if you write something that is not one of the 10 mentioned alternatives,
+since exact these 10 options are the only options that Kattis might like.
+
+When you manage to make Kattis happy, your remaining actions will get ignored.
+
+
+\textbf{Make sure to flush the output after each action}, otherwise you can get \textit{Time Limit Exceeded}.
+In C++ this can be done using \texttt{cout << flush;}
+or \texttt{fflush(stdout);}
+in Python with \texttt{stdout.flush()},
+and in Java with \texttt{System.out.flush();}.
+
+
+\noindent
+\begin{tabular}{| l | l | l |}
+  \hline
+  \textbf{Group} & \textbf{Point value} & \textbf{Constraints} \\ \hline
+  $1$   & $100$        & Make Kattis happy. \\ \hline
+\end{tabular}

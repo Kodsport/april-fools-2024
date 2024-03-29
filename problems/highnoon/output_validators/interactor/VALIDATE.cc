@@ -15,13 +15,8 @@ auto Start = chrono::high_resolution_clock::now();
 void resettimer() { Start = chrono::high_resolution_clock::now(); }
 int elapsedmillis() { return chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - Start).count(); }
 
-int startToInt() { return chrono::duration_cast<chrono::milliseconds>(chrono::high_resolution_clock::now() - Start).count(); }
+// Idea: output validator against judge-solution -> judgesolution prints current time in python. -> caluclate difference
 
-int main(){
-    int a;
-    a = 1+1+1+1+1;
-    cout << elapsedmillis();
-}
 /*
 int main(int argc, char **argv) {
     cout << Start;

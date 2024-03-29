@@ -3,17 +3,30 @@
 Det är dags för tandläkarbesök! Din tandläkare råkar vara intresserad i både DNA-strängar och problemlösning. 
 Medan tandläkaren håller på att pilla med dina tänder, ger tandläkaren följande problem till dig.
 
-Du får en $N$ lång delsträng av en DNA-sträng, där alla $N$ karaktärer måste vara något av \texttt{G}, \texttt{T}, \texttt{C} eller \texttt{A}.
+\begin{centering}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{gapastort.jpg}
+        \caption{Bild från \href{https://www.rawpixel.com/image/7661670/vector-cartoon-illustrations-public-domain}{www.rawpixel.com}}
+    \end{figure}
+\end{centering}
+  
 
-För att undvika den här DNA-strängen vill du hitta en annan DNA-delsträng med längds $N$ som skiljer sig med den givna DNA stängen på vardera position.
 
-Kan du hitta den \href{https://en.wikipedia.org/wiki/Lexicographic_order}{lexikografiskt} minsta av alla dessa möjligheter? 
+
+
+Du får en $N$ lång delsträng av en DNA-sträng, där alla $N$ karaktärer garanteras vara något av \texttt{G}, \texttt{T}, \texttt{C} eller \texttt{A}.
+
+Du vill hitta en annan DNA-delsträng med längd $N$ som skiljer sig med den givna DNA stängen på vardera position.
+
+Kan du hitta den \href{https://en.wikipedia.org/wiki/Lexicographic_order}{lexikografiskt} minsta av alla dessa möjliga DNA-strängar? 
+
 
 
 \section*{Indata}
 \noindent
 Den första raden av indata innehåller heltalet $N$ ($1 \leq N \leq 1000$).
-
+\noindent
 Den andra raden innehåller en sträng med $N$ bokstäver, där alla bokstäver är antingen \texttt{G}, \texttt{T}, \texttt{C} eller \texttt{A}.
 
 \section*{Utdata}
@@ -25,6 +38,8 @@ Denna sträng ska skilja sig med den givna strängen på alla positioner.
 
 \section*{Poängsättning}
 Du kan få upp till 100 poäng beroende på hur bra du lyckas lösa problemet.
+
+\textbf{Notera:} I detta problem får inte filen du skickar in vara större än 1 kB.
 
 %\noindent
 %\begin{tabular}{| l | l | l |}

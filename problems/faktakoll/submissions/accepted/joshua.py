@@ -4,7 +4,8 @@ l = input()
 
 samples = {"Sverige har vunnit IOI två gånger": "True",
            "Joshua Andersson hade 692 contributions på Github år 2023": "True",
-           "Harry Zhang hade 420 contributions på Github år 2023": "False"}
+           "Harry Zhang hade 420 contributions på Github år 2023": "False",
+           "Lösningen till Problemhunt är samma som ett av problemen på denna sida https://open.kattis.com/problem-sources/Doris 2023 deltävling 2": "True"}
 
 polyphia_songs = ["G.O.A.T.", "Playing God", "Champagne", "O.D.", "Goose", "ABC"]
 

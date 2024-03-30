@@ -61,6 +61,7 @@ tc_manual ../manual/flag.in
 
 group g5 19
 limits maxN=1000000
+include_group g3
 include_group g2
 tc g3_1 gen 
 tc g3_2 gen 

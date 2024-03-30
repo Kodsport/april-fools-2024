@@ -55,11 +55,11 @@ group g3 50
 limits maxN=1000000
 tc_manual ../manual/april.in
 
-group g4 0
+group g4 1
 limits maxN=1000000
 tc_manual ../manual/flag.in
 
-group g5 20
+group g5 19
 limits maxN=1000000
 include_group g2
 tc g3_1 gen 

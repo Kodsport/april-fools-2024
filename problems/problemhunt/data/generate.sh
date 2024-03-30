@@ -2,7 +2,7 @@
 
 PPATH=$(realpath ..)
 
-
+REQUIRE_SAMPLE_REUSE=0
 . ../../testdata_tools/gen.sh
 
 use_solution harry.py
@@ -10,7 +10,8 @@ use_solution harry.py
 compile gen.py
 
 
-
+samplegroup
+sample 1
 
 
 group g1 10

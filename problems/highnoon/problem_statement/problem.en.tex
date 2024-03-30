@@ -1,55 +1,29 @@
-\problemname{Make Kattis Happy}
+\problemname{High Noon}
 
-Kattis is not happy. Can you make Kattis happy?
+Ready up, cowboy. 
+
+You have a duel at high noon (12 o'clock in the middle of the day, or 12 pm). 
+Make sure you are here on time to shoot your shot.
 
 \begin{centering}
   \begin{figure}[h]
       \centering
-      \includegraphics[width=0.8\textwidth]{tired-kattis.png}
-      \caption{Picture of Kattis. Kattis is tired and sad since you always submit so many WA. }
+      \includegraphics[width=0.8\textwidth]{highnoon.jpg}
+      \caption{"Local Man Tells the Time" by essuei, from \href{https://www.deviantart.com/essuei/art/Overwatch-Local-Man-Tells-the-Time-614496598}{www.deviantart.com}. Licensed under \href{https://creativecommons.org/licenses/by-nc-nd/3.0/}{CC BY-NC-ND 3.0 DEED}.}
   \end{figure}
 \end{centering}
 
+\section*{Input}
+There is no input. Just make sure you are ready.
 
-\section*{Interaction}
-You have 10 different actions you can do:
+\section*{Output}
+Write ``PANG!'' on a single line to shoot your shot.
 
-\begin{enumerate}
-  \item Pour 10 ml of milk infront of Kattis.
-  \item Pet Kattis (Softly)
-  \item Pet Kattis (Hard).
-  \item Say ``Meow'' to Kattis.
-  \item Make Kattis wear some sick \href{https://www.amazon.se/kostymer-roliga-husdjur-kattunge-outfits/dp/B08XX7W5F9}{cat clothes}.
-  \item Give Kattis a high-five.
-  \item Watch cat-videos on Youtube together Kattis. (For example this \href{https://www.youtube.com/watch?v=NAh9oLs67Cw}{video} which Joshua has linked on his Discord)
-  \item Use a laserpointer and get Kattis to chase it.
-  \item Feed Kattis some cat candy.
-  \item Give Kattis some catnip.
-\end{enumerate}
+\section*{Grading}
+\textbf{Note:} You can only submit \textbf{one} correct solution för detta problem. If you already have submitted a correct solution, then only the first submission will count. 
+You can get from 0 up to 100 points. If you submit exactly at \href{https://www.timeanddate.com/worldclock/fixedtime.html?msg=Ready+yourself%2C+Cowboy&iso=20240401T12&p1=239}{High Noon} 
+($12:00:00$ Swedish time), then you get 100 poäng. For every second away from $12:00:00$ you submit, you will recieve 1 point less. 
 
-You can do up to 20 actions after eachother. You are allowed to repeat the same actions.
-To preform an action, output the action's number on a single line. For example, to pet Kattis softly, 
-and then pour 10 ml of milk infront of Kattis, you'll have to output \texttt{2} on a line, and then \texttt{1} on a seperate line.
-Make sure not to write too many actions on a single line. You do not want to make Kattis even more sad.
+For example if you submit at $11:59:55$, you will only get $95$ points. If you submit at $12:01:00$, you will only get $40$ points.
+But if you submit at $11:30:00$ you will get $0$ points.
 
-Your actions will be preformed one after another. If you manage to make Kattis upset to some specific degree,
-then your program will get terminated and you get \texttt{Wrong Answer} immediately.
-You will also get \texttt{Wrong Answer} if you write something that is not one of the 10 mentioned alternatives,
-since exact these 10 options are the only options that Kattis might like.
-
-When you manage to make Kattis happy, your remaining actions will get ignored.
-
-
-\textbf{Make sure to flush the output after each action}, otherwise you can get \textit{Time Limit Exceeded}.
-In C++ this can be done using \texttt{cout << flush;}
-or \texttt{fflush(stdout);}
-in Python with \texttt{stdout.flush()},
-and in Java with \texttt{System.out.flush();}.
-
-
-\noindent
-\begin{tabular}{| l | l | l |}
-  \hline
-  \textbf{Group} & \textbf{Point value} & \textbf{Constraints} \\ \hline
-  $1$   & $100$        & Make Kattis happy. \\ \hline
-\end{tabular}

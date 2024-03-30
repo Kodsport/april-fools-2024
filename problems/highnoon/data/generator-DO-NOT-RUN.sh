@@ -7,7 +7,11 @@ PPATH=$(realpath ..)
 
 use_solution harry.py
 
+samplegroup
+sample 1
+
 group group1 100
-tc_manual ../manual/highnoon.in
+tc 1
+#tc_manual ../manual/highnoon.in
 
 

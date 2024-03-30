@@ -1,54 +1,28 @@
-\problemname{Gör Kattis glad}
+\problemname{High Noon}
 
-Kattis är inte glad. Kan du få Kattis att bli glad?
+Gör det redo, cowboy. 
+
+Du har en duell vid high noon (klockan 12 mitt på dagen). 
+Se till att vara här i tid för att skjuta ditt skott.
 
 \begin{centering}
   \begin{figure}[h]
       \centering
-      \includegraphics[width=0.8\textwidth]{tired-kattis.png}
-      \caption{Bild på Kattis. Kattis är trött och ledsen över att du lämnar in så många WA. }
+      \includegraphics[width=0.8\textwidth]{highnoon.jpg}
+      \caption{"Local Man Tells the Time" av essuei, från \href{https://www.deviantart.com/essuei/art/Overwatch-Local-Man-Tells-the-Time-614496598}{www.deviantart.com}. Licenserat under \href{https://creativecommons.org/licenses/by-nc-nd/3.0/}{CC BY-NC-ND 3.0 DEED}.}
   \end{figure}
 \end{centering}
 
+\section*{Indata}
+Det finns ingen indata. Se bara till att du är redo.
 
-\section*{Interaktion}
-Du har 10 olika handlingar som du kan göra: 
+\section*{Utdata}
+Skriv ut ``PANG!'' på en rad för att skjuta ditt skott.
 
-\begin{enumerate}
-  \item Hälla 10 ml mjölk precis framför Kattis.
-  \item Klappa på Kattis (Mjukt)
-  \item Klappa på Kattis (Hårt).
-  \item Säg ``Meow'' till Kattis.
-  \item Klä på Kattis med lite snygga \href{https://www.amazon.se/kostymer-roliga-husdjur-kattunge-outfits/dp/B08XX7W5F9}{kattdräkter}.
-  \item Ge Kattis en high-five.
-  \item Kolla på katt-videos på internet tillsammans med Kattis. (Exempelvis den här \href{https://www.youtube.com/watch?v=NAh9oLs67Cw}{videon} som Joshua länkar på hans Discord.)
-  \item Använd en laserpekare och få Kattis att jaga lasret. 
-  \item Mata Kattis lite kattgodis.
-  \item Ge Kattis lite kattmynta.
-\end{enumerate}
+\section*{Poängsättning}
+\textbf{Notera:} Du kan endast submitta \textbf{en} korrekt lösning för detta problem. Om du redan har submittat en korrekt lösning kommer endast den första att räknas.  
+Du kan få 0 till 100 poäng. Om du submittar precis vid \href{https://www.timeanddate.com/worldclock/fixedtime.html?msg=Ready+yourself%2C+Cowboy&iso=20240401T12&p1=239}{High Noon} 
+($12:00:00$ Svensk tid), får du exakt 100 poäng. För varje sekund ifrån $12:00:00$ du submittar, får du 1 poäng mindre. 
 
-Du får göra upp till 20 handlingar efter varandra. Du får även repetera samma handling flera gånger.
-För att göra en handling, skriv ut handlingens nummer på en egen rad. För att klappa på Kattis mjukt, 
-och sedan hälla 10 ml mjölk precis framför Kattis, kan du skriva \texttt{2} på en rad, och sedan \texttt{1} på en annan rad.
-Se till att inte skriva för mycket på en rad, du vill inte göra Kattis ännu mer ledsen. 
-
-Dina handlingar kommer att utföras en efter en. Ifall du lyckas göra Kattis väldigt upprörd till en viss nivå, 
-avslutas ditt program och du får \texttt{Wrong Answer} direkt. 
-Du får även \texttt{Wrong Answer} ifall du skriver något som inte är något av de ovannämnda 10 alternativen, 
-eftersom allting förutom dessa 10 alternativ gillar inte Kattis.
-
-När Kattis blir glad, kommer dina övriga handlingar att avbrytas.
-
-\textbf{Se till att flusha outputen efter varje handling}, annars kan du få \textit{Time Limit Exceeded}.
-I C++ kan detta göras med exempelvis \texttt{cout << flush;}
-eller \texttt{fflush(stdout);},
-i Python med \texttt{stdout.flush()}
-och i Java med \texttt{System.out.flush();}.
-
-
-\noindent
-\begin{tabular}{| l | l | l |}
-  \hline
-  \textbf{Grupp} & \textbf{Poäng} & \textbf{Gränser} \\ \hline
-  $1$   & $100$        & Gör Kattis glad. \\ \hline
-\end{tabular}
+Till exempel om du submittar vid $11:59:55$ får du endast $95$ poäng. Om du submittar $12:01:00$ får du endast $40$ poäng.
+Men om du submittar $11:30:00$ kommer du få $0$ poäng.

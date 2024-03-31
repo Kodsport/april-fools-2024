@@ -1,4 +1,3 @@
-#include "validate.h"
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -17,13 +16,7 @@ int elapsedmillis() { return chrono::duration_cast<chrono::milliseconds>(chrono:
 
 
 int main(int argc, char **argv) {
-    init_io(argc, argv);
-	string key;
-	author_out >> key;
 
-	if (key != "PANG!"){
-		wrong_answer("Did not write 'PANG!'.");
-	}
 	
 	// Get current time
     auto now = std::chrono::system_clock::now();
@@ -60,12 +53,8 @@ int main(int argc, char **argv) {
     // Convert duration to seconds
     long long seconds = -std::chrono::duration_cast<std::chrono::seconds>(duration).count();
 
-	if (seconds > 0 && seconds < 100){
-		float score = 100-seconds;
-		accept_with_score(score);
-	}
+	cout << "seconds left: " << seconds << endl;
 	//wrong_answer("Missed the High Noon. (Submitted at the wrong time.)");
-    accept_with_score(0);
 
     return 0;
 }
